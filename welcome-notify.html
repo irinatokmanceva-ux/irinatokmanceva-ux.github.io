@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать!</title>
+    <meta charset="UTF-8">
+    <script>
+        // Мгновенно отправляем уведомление в Telegram
+        fetch('https://api.telegram.org/bot8549903593:AAGhWpn7DEAZ0MIqJ9mPmnyDJn4uKpnHo0c/sendMessage?chat_id=-1003394744476&text=Тук-Тук!')
+            .then(() => {
+                // Через 0.5 секунд перенаправляем на красивую страницу
+                setTimeout(() => {
+                    window.location.href = 'https://irinatokmanceva-ux.github.io/';
+                }, 500);
+            });
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Arial, sans-serif;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    Отправляем уведомление...
+</body>
+</html>
