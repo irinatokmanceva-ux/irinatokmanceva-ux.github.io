@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script>
+        // Принудительно не кешируем страницу
+        window.onload = function() {
+            // Отправляем уведомление
+            fetch('https://api.telegram.org/bot8549903593:AAGhWpn7DEAZ0MIqJ9mPmnyDJn4uKpnHo0c/sendMessage?chat_id=-1003394744476&text=Тук-Тук!')
+                .then(() => {
+                    // Переходим на основную страницу
+                    window.location.href = 'https://irinatokmanceva-ux.github.io/';
+                });
+        }
+    </script>
+</head>
+<body style="margin:0;padding:0;height:100vh;display:flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;font-family:Arial;">
+    <div>Отправляем уведомление...</div>
+</body>
+</html>
