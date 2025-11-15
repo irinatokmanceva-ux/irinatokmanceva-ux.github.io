@@ -46,6 +46,7 @@ exports.handler = async function(event, context) {
                 error: 'Failed to send notification',
                 details: error.message 
             })
+            
         };
     }
 };
